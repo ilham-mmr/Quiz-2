@@ -22,7 +22,7 @@
     
 -  Comment out the method introduceYourself in Dog. What happens now when you run the program?
 
-    the output is Morr. I am an animal. The reason it happens because dog extends animal and in the animal class has introduceYourself method.
+    the only different output is Morr. I am an animal. The reason it happens because dog extends animal and in the animal class has introduceYourself method.
     
 -  Where is the name stored for the instances of Cat and Dog? (In what / which classes did you put the instance variable that refers to the name of the animal? Both Cat and Dog, or just in Animal?)
 
