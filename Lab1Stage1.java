@@ -18,31 +18,40 @@ public class Lab1Stage1{
 }
 
 class Animal{
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+    
     public void introduceYourself(){
         System.out.println("Morr. I am an animal.");
     }
 }
 
 class Cat extends Animal{
-    private String name;
-    public Cat(String name){
-        this.name = name;
+
+    public Cat(String name) {
+        super(name);
     }
 
     @Override
     public void introduceYourself() {
-        System.out.println("Meow. I am a cat. My name is "+name);
+        System.out.println("Meow. I am a cat. My name is "+super.getName());
     }
 }
 
 class Dog extends Animal{
-    private String name;
-    public Dog(String name){
-        this.name = name;
+    public Dog(String name) {
+        super(name);
     }
-
+    
     @Override
     public void introduceYourself() {
-        System.out.println("Woof. I am a dog. My name is "+name);
+        System.out.println("Woof. I am a dog. My name is "+super.getName());
     }
 }
